@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+:root {
+    --blue: #6466E9;
+    --very-dark: #111729;
+    --dark: #20293A;
+    --dark-grey: #4A5567;
+    --grey: #97A3B6;
+
+    --family: "Outfit", sans-serif;
+    --large-text: 24px;
+    --medium-text: 16px;
+    --small-text: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--very-dark);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--family);
+}
+main {
+    max-width: 500px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+main .quot {
+    background-color: var(--dark);
+    background-image: url("./assets/bg-image-random-quote.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+main .quot h1 {
+    font-size: var(--large-text);
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 10px;
+}
+main .quot .types {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+main .quot .types span {
+    display: block;
+    width: fit-content;
+    padding: 5px 15px;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    text-transform: capitalize;
+    font-size: var(--small-text);
+    font-weight: 300;
+    border-radius: 20px;
+}
+main .quot p {
+    font-size: var(--medium-text);
+    color: var(--grey);
+    font-weight: 400;
+    text-align: center;
+}
+main .btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .btns button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+main .btns button.regroup {
+    border: 2px solid var(--dark-grey);
+    border-radius: 10px 0 0 10px;
+}
+main .btns button.link {
+    border: 2px solid var(--dark-grey);
+    border-radius: 0 10px 10px 0;
+    border-left: none;
+}
